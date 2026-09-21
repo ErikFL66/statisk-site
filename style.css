@@ -1,0 +1,122 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  interpolate-size: allow-keywords;
+  font-family: system-ui, sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2 {
+  line-height: 1.25;
+}
+
+p,
+li {
+  text-wrap: pretty;
+}
+
+img,
+svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+label {
+  display: block;
+}
+  
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  font-size: max(1em, 16px);
+}
+
+textarea {
+  resize: none;
+  min-height: 4lh;
+}
+
+legend {
+  padding: 0;
+}
+
+select,
+::picker(select) {
+  appearance: base-select;
+}
+
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4rem;
+    margin-inline: 2rem;
+}
+
+.navlink {
+    display: flex;
+    justify-content:right;
+    gap: 10px;
+    
+}
+nav div p a{
+    color: rgb(42, 41, 41);
+    text-decoration: underline;
+}
+.logo {
+    width: 25rem;
+}
+
+.categories {
+    margin-inline: 2rem;
+}
+
+.card-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+    margin-top: 1rem;
+
+}
+.indexcard {
+    background-color: gray;
+    padding: 2rem;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.productgrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 15px;
+    margin-top: 1rem; 
+}
+
+.brand {
+    opacity: 50%;
+}
+
+.price{
+    text-transform: uppercase;
+}
+
+.readmore {
+    text-transform: capitalize;
+    text-decoration: underline;
+    color: black;
+}
