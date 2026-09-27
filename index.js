@@ -1,5 +1,4 @@
 "use strict";
-console.log("hello world");
 const productUrl = "https://kea-alt-del.dk/t7/api/categories";
 const cardGrid = document.querySelector(".card-grid");
 getData();
