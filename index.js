@@ -12,10 +12,9 @@ function showData(data) {
   let myInnerHtml = "";
 
   data.forEach((categories) => {
-    myInnerHtml += `   
-    <a href="productlist.html" class="indexcard">
-${categories.category}</a>
-`;
+    myInnerHtml += `<a href="productlist.html" class="indexcard">
+${categories.category}'
+</a>`;
   });
 
   cardGrid.innerHTML = myInnerHtml;
