@@ -12,8 +12,8 @@ function showData(data) {
   let myInnerHtml = "";
 
   data.forEach((categories) => {
-    myInnerHtml += `<a href="productlist.html" class="indexcard">
-${categories.category}'
+    myInnerHtml += `<a href="productlist.html?category=${categories.category}" class="indexcard">
+${categories.category}
 </a>`;
   });
 
