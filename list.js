@@ -29,7 +29,7 @@ function showProducts(products) {
           ${product.discount ? "<p class='discount_tag'>" + getDiscountPrice(product.price, product.discount) + "</p>" : ""}
             <p>${product.price} kr    ${product.discount ? " -" + product.discount + "%" : ""}</p>
           </div>
-          <p><a href="product.html?id=${product.id}">Read More</a></p>
+          <p><a class='readmore' href="product.html?id=${product.id}">Read More</a></p>
           ${product.soldout ? "<p class='soldout_tag'>Sold Out</p>" : ""}
         </article>`;
   });
